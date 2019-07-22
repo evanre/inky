@@ -52,9 +52,7 @@ describe('Center', () => {
                 <table role="presentation">
                   <tbody>
                     <tr>
-                      <th class="menu-item float-center">
-                        <a href="#"></a>
-                      </th>
+                      <th class="menu-item float-center"><a href="#"></a></th>
                     </tr>
                   </tbody>
                 </table>
