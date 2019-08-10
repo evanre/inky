@@ -427,11 +427,23 @@ describe('wrapper', () => {
   });
 });
 
-describe('h-line', () => {
-  it('creates a horizontal rule that you can attach classes to', () => {
-    var input = `<h-line class="dotted">`;
+describe('hr', () => {
+  it('creates a horizontal line', () => {
+    var input = `<hr>`;
     var expected = `
-      <table class="h-line dotted" role="presentation">
+      <table class="hr" role="presentation">
+        <tr>
+          <th>&nbsp;</th>
+        </tr>
+      </table>
+    `;
+    compare(input, expected);
+  });
+
+  it('creates a horizontal rule that you can attach classes to', () => {
+    var input = `<hr class="dotted">`;
+    var expected = `
+      <table class="hr dotted" role="presentation">
         <tr>
           <th>&nbsp;</th>
         </tr>
